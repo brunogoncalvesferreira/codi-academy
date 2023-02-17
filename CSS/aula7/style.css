@@ -1,0 +1,16 @@
+body {
+  font-size: 30px;
+  background: #2323;
+  color: #000;
+}
+
+#especial {
+  font-size: 2em;
+  font-family: "Rubik", sans-serif;
+}
+
+.key {
+  font-style: italic;
+  font-weight: bold;
+  text-decoration: underline;
+}

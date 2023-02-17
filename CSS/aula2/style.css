@@ -1,0 +1,15 @@
+h1 {
+  background: orange;
+  color: black;
+}
+
+p {
+  font-size: 18px;
+  color: blue;
+}
+
+#text2 {
+  color: lightcoral;
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+}

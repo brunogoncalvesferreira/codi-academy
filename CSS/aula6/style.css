@@ -1,0 +1,12 @@
+#box {
+  background: green;
+
+  width: 200px;
+  height: 200px;
+
+  display: flex;
+  align-items: center;
+
+  margin: 20px auto;
+  padding: 20px;
+}

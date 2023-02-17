@@ -1,0 +1,9 @@
+h1 {
+  background: green; /*background define a cor de fundo do elemento*/
+  color: blue; /*color define a cor do texto*/
+}
+
+p {
+  font-size: 18px; /*font-size define o tamanho do texto*/
+  color: purple;
+}
