@@ -18,6 +18,6 @@ function handleSubmitEvent() {
     inputEmail.focus()
   } else {
     alert("Login realizado com sucesso!")
-    window.location = "/modal.html"
+    window.location = "modal.html"
   }
 }
