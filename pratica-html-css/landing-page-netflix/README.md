@@ -1,1 +1,1 @@
-<h1>Desafio - Netflix<h1>
+<h1 aling='center'>Desafio - Netflix<h1>
