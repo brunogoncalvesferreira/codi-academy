@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: #282828;
+  font-family: "Roboto", sans-serif;
+}
+
+header i {
+  font-size: 2.4rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+header .logo-menu,
+header .search,
+header .search .box-search,
+header .icons {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+header .logo-menu img {
+  width: 10rem;
+}
+
+header .search .box-search {
+  position: relative;
+}
+
+header .search .box-search input {
+  width: 60rem;
+  padding: 1rem;
+  background-color: #121113;
+  border: 1px solid gray;
+  outline: none;
+}
+
+header .box-search i {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #818081;
+  width: 6rem;
+  height: 100%;
+  display: block;
+  text-align: center;
+  line-height: 45px;
+}
+
+header .notification {
+  position: relative;
+}
+
+header .notification span {
+  position: absolute;
+  display: block;
+  top: 0;
+  margin: -1rem 0 0 1rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff;
+  background-color: red;
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+
+header .icons img {
+  width: 4rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 350px 1fr;
+}
+
+aside .content-side {
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid gray;
+}
+
+aside .link {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1rem;
+  margin: 1.5rem 0;
+}
+
+aside .link:hover {
+  background-color: gray;
+  cursor: pointer;
+}
+
+aside .link i {
+  margin-left: 1.2rem;
+  color: #fff;
+}
+
+aside .link a {
+  text-decoration: none;
+  color: #fff;
+}
+
+aside .content-side h2 {
+  font-size: 2rem;
+  font-weight: 300;
+  margin: 2rem 0 0 1.8rem;
+  color: #fff;
+}
+
+main {
+  background-color: #121113;
+  height: 100%;
+}
