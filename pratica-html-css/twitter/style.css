@@ -1,0 +1,428 @@
+/* ------------- Global ------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  background: #17202a;
+  font-family: "Rubik", sans-serif;
+}
+
+#app {
+  max-width: 1255px;
+  width: 90%;
+  margin: 0 auto;
+  height: 100vh;
+
+  display: grid;
+  grid-template-columns: 275px 1fr;
+  align-items: flex-start;
+}
+
+/* ------------- Aside ------------- */
+aside .logo {
+  padding: 1.6rem;
+}
+
+aside .links {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+aside .links .items-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 1.6rem;
+}
+
+aside .links .items-links span {
+  font-weight: 700;
+  font-size: 1.9rem;
+  line-height: 23px;
+  color: #fff;
+}
+
+aside .links .items-links span:hover {
+  color: #1da1f2;
+  cursor: pointer;
+}
+
+aside .links .items-links .color-blue {
+  color: #1da1f2;
+}
+
+aside .links .items-links .bookmarks {
+  margin-left: 1rem;
+}
+
+aside .links .items-links .bookmarks-img {
+  margin-left: 0.5rem;
+}
+
+aside button {
+  width: 20.25rem;
+  height: 4.9rem;
+  background: #1da1f2;
+  border: none;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 19px;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 1.5rem;
+}
+
+aside button:hover {
+  background: #1983c6;
+}
+
+/* ------------- Feed ------------- */
+
+main {
+  display: grid;
+  grid-template-columns: 598px 350px;
+  gap: 1.875rem;
+}
+
+main .feed {
+  border: 1px solid #3a444c;
+}
+
+main .feed header {
+  border-bottom: 1px solid #3a444c;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.6rem;
+}
+
+main .feed header h1 {
+  font-size: 1.9rem;
+  line-height: 23px;
+  color: #fff;
+}
+
+main .feed .line {
+  height: 1rem;
+  background: #1c2733;
+  border-bottom: 1px solid #3a444c;
+}
+
+main .feed .post {
+  position: relative;
+  padding: 1.6rem;
+  border-bottom: 1px solid #3a444c;
+}
+
+main .feed .post textarea {
+  width: 100%;
+  height: 12.125rem;
+  border: none;
+  outline: none;
+  background: #17202a;
+  color: gray;
+  padding-inline: 6rem;
+  margin-top: 0.5rem;
+  resize: none;
+  line-height: 20px;
+}
+
+main .feed .post .avatar {
+  position: absolute;
+  top: 1rem;
+  left: 1.6rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+main .feed .post .actions {
+  position: absolute;
+  bottom: 1.7rem;
+  left: 7.1rem;
+  display: flex;
+  gap: 1.5rem;
+}
+
+main .feed .post .actions img:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+main .feed .post button {
+  position: absolute;
+  bottom: 1.7rem;
+  right: 1.5rem;
+  padding: 1rem 1.7rem;
+  background: #1da1f2;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 19px;
+  color: #fff;
+  opacity: 30%;
+  cursor: pointer;
+}
+
+main .feed .post button:hover {
+  opacity: 1;
+}
+
+/* ------------- Tweet ------------- */
+main .tweet {
+  border-bottom: 1px solid #3a444c;
+  padding: 1.6rem;
+}
+
+main .tweet .info-user {
+  display: flex;
+  gap: 1rem;
+}
+
+main .tweet .info-user img {
+  border-radius: 50%;
+}
+
+main .tweet .info-user .info .text strong {
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 18px;
+  color: #ffffff;
+  margin-right: 0.4rem;
+}
+
+main .tweet .info-user .info .text span {
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 18px;
+  color: #8899a6;
+}
+
+main .tweet .info-user .info .text span time::before {
+  content: "\2022 ";
+  padding-right: 0.5rem;
+}
+
+main .tweet .info-user .info .text-tweet p {
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 18px;
+  margin-top: 0.4rem;
+  color: #ffffff;
+}
+
+main .tweet .img-tweet {
+  padding-left: 6rem;
+  margin-top: 1rem;
+}
+
+main .tweet .img-tweet img {
+  width: 100%;
+}
+
+main .tweet .result-tweet {
+  display: flex;
+  gap: 5.375rem;
+  margin-left: 6rem;
+}
+
+main .tweet .result-tweet .result {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #8899a6;
+  margin-top: 1.2rem;
+  cursor: pointer;
+}
+
+main .tweet .result-tweet .result p.red {
+  color: #f4245e;
+}
+
+main .tweet a {
+  display: block;
+  width: 12rem;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.3rem;
+  line-height: 16px;
+  color: #1da1f2;
+  margin-left: 6rem;
+  padding-top: 2rem;
+}
+
+main .tweet a:hover {
+  transform: scale(1.1);
+  color: #1983c6;
+  margin-left: 6.5rem;
+}
+
+/* ------------- News ------------- */
+main .side-column {
+  padding-top: 2rem;
+}
+
+main .side-column .search {
+  position: relative;
+}
+
+main .side-column .search input {
+  width: 100%;
+  height: 4rem;
+  padding: 1rem 3.5rem;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  background: #283340;
+  color: gray;
+}
+
+main .side-column .search img {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+main .side-column .news {
+  width: 100%;
+  height: auto;
+  background: #1c2733;
+  border-radius: 16px;
+  margin-top: 1.6rem;
+}
+
+main .side-column .news h2,
+main .follow h2 {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 24px;
+  letter-spacing: 0.014em;
+  color: #ffffff;
+  padding: 1rem 1.6rem;
+}
+
+main .side-column .news .container {
+  display: flex;
+  padding: 0 1rem 0.5rem 0;
+  border-top: 1px solid #3a444c;
+}
+
+main .side-column .news .container .content-news strong {
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 17px;
+  color: #8899a6;
+  padding: 1rem 1.6rem;
+  display: block;
+}
+
+main .side-column .news .container .content-news strong span::before {
+  content: "\2022";
+  padding-right: 0.5rem;
+}
+
+main .side-column .news .container .content-news p {
+  padding: 1rem 1.6rem;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+
+main .side-column .news .container .content-news .topic-footer a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 17px;
+  letter-spacing: -0.02em;
+  color: #1da1f2;
+}
+
+main .follow {
+  width: 100%;
+  height: auto;
+  background: #1c2733;
+  border-radius: 16px;
+  margin-top: 1.6rem;
+}
+
+main .follow .content-follow {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #3a444c;
+}
+
+main .follow .follow-user {
+  display: flex;
+}
+
+main .follow .follow-user img {
+  padding: 1rem 1.6rem;
+  border-radius: 50%;
+}
+
+main .follow .follow-profile {
+  width: 18.25rem;
+}
+
+main .follow .follow-profile strong {
+  padding-top: 1rem;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 19px;
+  color: #ffffff;
+}
+
+main .follow .follow-profile span {
+  color: #8899a6;
+}
+
+main .follow .content-follow button {
+  width: 7rem;
+  height: 2.875rem;
+  border-radius: 30px;
+  border: 1px solid #1da1f2;
+  background: transparent;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 19px;
+  text-align: center;
+  color: #1da1f2;
+  cursor: pointer;
+}
+
+main .follow a {
+  display: block;
+  padding: 1rem 1.6rem;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 18px;
+  color: #1da1f2;
+  border-top: 1px solid #3a444c;
+}
+
+/* ------------- Footer ------------- */
+
+footer {
+  font-weight: 500;
+  font-size: 1.3rem;
+  line-height: 16px;
+  color: #8899a6;
+  margin-top: 1rem;
+}
